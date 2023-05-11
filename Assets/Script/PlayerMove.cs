@@ -16,6 +16,7 @@ public class PlayerMove : MonoBehaviour
     public Animator animator;
     public GameObject dustLeft;
     public GameObject dustRight;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +60,8 @@ public class PlayerMove : MonoBehaviour
         else if(rb2D.velocity.y>0){
             animator.SetBool("Falling", false);
         }
+
+
     }
     void FixedUpdate()
     {
